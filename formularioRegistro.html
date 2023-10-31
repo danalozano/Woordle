@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M.06 - UF3 - Proyecto</title>
+        <script src="./JavaScript/scriptsFormularioRegistro.js" defer></script>
+    </head>
+    <body>
+        <!-- Seccion: Formulario donde se le pedira al usuario que se registre. -->
+        <section id="sectionFormRegistro">
+            <h1>Registrate</h1>
+            <hr>
+            <!-- Formulario de registro -->
+            <form name="registro" id="formRegistro" action="#" method="POST">
+                <!-- Nombre -->
+                <label for="textNombre">
+                    <div class="formInput">
+                        <span>Nombre</span>
+                        <input type="text" name="nombre" id="textNombre">
+                    </div>
+                    <span id="estadoNombre">&nbsp;</span>
+                </label>
+
+                <!-- Apellido -->
+                <label for="textApellido">
+                    <div class="formInput">
+                        <span>Apellido</span>
+                        <input type="text" name="apellido" id="textApellido">
+                    </div>
+                    <span id="estadoApellido">&nbsp;</span>
+                </label>
+
+                <!-- Correo -->
+                <label for="emailCorreo">
+                    <div class="formInput">
+                        <span>Correo</span>
+                        <input type="email" name="correo" id="emailCorreo">
+                    </div>
+                    <span id="estadoCorreo">&nbsp;</span>
+                </label>
+
+                <!-- Telefono -->
+                <label for="telTelefono">
+                    <div class="formInput">
+                        <span>Teléfono</span>
+                        <input type="tel" name="telefono" id="telTelefono">
+                    </div>
+                    <span id="estadoTelefono">&nbsp;</span>
+                </label>
+
+                <!-- Opciones del formulario: Boton para comprobar que los datos sean correctos. -->
+                <div id="opcionesFormulario">
+                    <input type="button" name="validarDatos" id="buttonValidarDatos" value="Validar">
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
