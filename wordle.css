@@ -1,0 +1,91 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;500;700&display=swap');
+
+ body{
+    width: 99%;
+}
+ #container{
+    text-align: center;
+}
+.header{
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    background-color: #ff89897d;
+    border: 2px solid #c04bfa;
+    font-family: "Playpen Sans";
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.estadisticas-icon,
+.question-icon {
+    align-items: center;
+    padding: 0 10px;
+}
+
+.titulo {
+    text-align: center;
+    flex-grow: 1;
+}
+
+/*Aqui es el css de los cuadros donde introduciremos las letras*/
+.recuadros{
+    margin: 10px;
+}
+.cuadro {
+    margin:auto;
+    width: 90px;
+    height: 70px;
+    border: 2px solid #c04bfa;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+/*Estilos para hacer nuestras letras*/
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px;
+}
+
+.key {
+    width: 90px;
+    height: 70px;
+    background-color: #ff89897d;
+    border: 2px solid #c04bfa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Playpen Sans";
+}
+
+.key:hover{
+    background-color: rgba(214, 178, 245, 0.817);
+}
+
+/* Agregar una media query para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .header {
+        font-size: 24px;
+    }
+
+    .cuadro {
+        width: 70px;
+        height: 50px;
+    }
+
+    .key {
+        width: 70px;
+        height: 50px;
+    }
+}
